@@ -15,20 +15,93 @@ venv/
 .env
 .env.*
 !.env.example
+.envrc
 *.pem
 *.key
 credentials*.json
 service-account*.json
+client_secret*.json
+token.json
+access_token
+[Kk][Aa][Gg][Gg][Ll][Ee]*.json
+.kaggle/
+id_rsa*
+id_ed25519*
+*.p12
+*.pfx
 
 # ── VOIX RÉELLES — jamais dans Git (dataset Kaggle privé)
-bench/corpus_terrain/audio/
-bench/corpus_terrain/consentement/
-bench/corpus_terrain/manifeste.tsv
-*.opus
-*.m4a
-*.aac
-*.wav
-!bench/fixtures/**/*.wav
+# Dossiers de corpus en liste blanche : tout y est ignoré (audio/, consentement/,
+# manifeste.tsv, mais aussi toute copie .csv, .xlsx, .bak…). Exceptions en fin de fichier.
+**/corpus_terrain/*
+corpus/*
+# Manifestes et exports copiés ailleurs : transcriptions, noms, numéros
+manifeste*
+manifest*.csv
+manifest*.tsv
+manifest*.xlsx
+WhatsApp *
+_chat.txt
+PTT-*-WA*
+AUD-*-WA*
+IMG-*-WA*
+VID-*-WA*
+# Exemples de transcription des corpus privés, écrits à part par le notebook ASR,
+# et leurs dérivés (« (1).json », .xlsx, .csv, téléchargement en cours…)
+*_PRIVE*
+*_prive*
+# Audio et vidéo. Classes de caractères pour les formats courants : un clone Linux
+# respecte la casse (.WAV d'un enregistreur, .OGG…).
+*.[Oo][Pp][Uu][Ss]
+*.[Oo][Gg][Gg]
+*.[Oo][Gg][Aa]
+*.[Ww][Aa][Vv]
+*.[Mm]4[Aa]
+*.[Aa][Aa][Cc]
+*.[Mm][Pp]3
+*.[Aa][Mm][Rr]
+*.[Ff][Ll][Aa][Cc]
+*.[Ww][Ee][Bb][Mm]
+*.[Mm][Pp]4
+*.3gp
+*.3gpp
+*.3ga
+*.3g2
+*.weba
+*.awb
+*.aup3
+*.caf
+*.aif
+*.aiff
+*.wma
+*.mka
+*.spx
+*.qta
+*.mpeg
+*.mpg
+*.mpga
+*.mov
+*.avi
+*.mkv
+*.m4v
+*.wmv
+# Archives de corpus et téléchargements partiels
+*.[Zz][Ii][Pp]
+*.zip.[0-9]*
+*.z[0-9][0-9]
+*.7z
+*.7z.[0-9]*
+*.rar
+*.tar
+*.tgz
+*.gz
+*.xz
+*.bz2
+*.zst
+*.part
+*.crdownload
+# Checkpoints Jupyter : contiennent les sorties d'une exécution locale
+.ipynb_checkpoints/
 
 # ── Divers
 .DS_Store
@@ -38,19 +111,17 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 
-# ── Spécifique au code existant (ajouté à l'import)
-# Fichier généré par Next.js à chaque `pnpm dev` / `pnpm build`
+# ── Spécifique au code Next.js
 next-env.d.ts
 coverage/
 # Stockage des mocks (USE_MOCKS=true) : octets simulés, jamais versionnés
 public/mock-storage/
 # Réglages personnels de Claude Code (permissions locales)
 .claude/settings.local.json
-# Autres formats de voix : les vocaux WhatsApp arrivent en .ogg (Opus)
-*.ogg
-*.oga
-*.mp3
-*.webm
-*.flac
-*.amr
-*.3gp
+
+# ── Exceptions — à garder EN DERNIER : une négation doit suivre les règles qu'elle lève
+!bench/corpus_terrain/README.md
+!bench/corpus_terrain/manifeste.modele.tsv
+!corpus/README.md
+# Fixtures audio de test : de la synthèse uniquement, jamais une voix réelle
+!bench/fixtures/synthetique/**/*.wav

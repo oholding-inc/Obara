@@ -70,15 +70,16 @@ const DUREE_AUDIO_MAX_MS = 40_000; // Omnilingual ASR : audio < 40 s (CLAUDE.md 
  * Huit transcriptions réalistes couvrant la scène de démo (Awa, Kouassi) et
  * le seed (maçon, mécanicien, couturière, employeur anglophone).
  *
- * Les textes en dioula et en baoulé sont des PLACEHOLDERS en orthographe
- * standard, à valider par un locuteur ; ils seront remplacés par les vraies
- * transcriptions du corpus maison quand il existera.
+ * Les textes en dioula et en baoulé sont des PLACEHOLDERS fictifs en orthographe
+ * standard, à valider par un locuteur. Ce fichier est public : n'y collez jamais une
+ * transcription du corpus terrain (voix réelles, CLAUDE.md v2 §8). Les vraies
+ * transcriptions restent dans le dataset privé.
  */
 export const TRANSCRIPTIONS_MOCK: readonly TranscriptionMock[] = [
   {
     // Awa, aide-ménagère, Yopougon, disponible le matin — en dioula.
     // « Je m'appelle Awa. Je fais le travail de maison, à Yopougon. Je peux travailler le matin. »
-    // Sera remplacée par la vraie transcription du corpus.
+    // Texte fictif : jamais de transcription réelle ici (dépôt public).
     cle: "awa-dyu",
     langue: "dyu",
     texte: "N tɔgɔ ye Awa. N bɛ so baara kɛ, Yopougon. N bɛ se ka baara kɛ sɔgɔma.",
@@ -103,7 +104,7 @@ export const TRANSCRIPTIONS_MOCK: readonly TranscriptionMock[] = [
   {
     // Koffi, maçon à Abobo — en baoulé (placeholder, à valider par un locuteur).
     // « Je m'appelle Koffi. Je suis maçon. J'habite Abobo. Je peux travailler le matin. »
-    // Sera remplacée par la vraie transcription du corpus.
+    // Texte fictif : jamais de transcription réelle ici (dépôt public).
     cle: "macon-bci",
     langue: "bci",
     texte: "Min dunman ti Koffi. N ti sua kplanfuɛ. N tran Abobo. N kwla di junman nglɛmun.",

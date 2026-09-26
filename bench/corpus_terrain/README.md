@@ -10,8 +10,10 @@ vocal WhatsApp depuis un marché d'Abobo, c'est autre chose. Tant que ce corpus 
 ## ⚠ Ce dossier ne contient jamais de voix dans Git
 
 Le dépôt GitHub est **public**. Les enregistrements sont des voix de personnes réelles,
-souvent vulnérables. Le `.gitignore` exclut `audio/` et `manifeste.tsv`. Seuls ce README et
-le modèle de manifeste sont versionnés.
+souvent vulnérables. Le `.gitignore` exclut tout ce dossier sauf ce README et le modèle de
+manifeste : `audio/`, `consentement/`, `manifeste.tsv`, mais aussi toute copie ou tout export
+(`.csv`, `.xlsx`, `.bak`…). Les exemples de transcription que le banc produit sur ce corpus
+sont écrits à part, dans un fichier `*_PRIVE.json` lui aussi ignoré.
 
 Stockage : un **dataset Kaggle privé** (`obara-corpus-terrain`, visibilité *Private*) ou un
 dossier Drive privé. Jamais de dataset public, jamais de lien partagé ouvert.
@@ -73,6 +75,8 @@ qu'on ne regarde jamais pour régler le prompt.
 ## Manifeste
 
 `manifeste.tsv`, une ligne par énoncé, séparateur tabulation — voir `manifeste.modele.tsv`.
+Copier `manifeste.modele.tsv` en `manifeste.tsv` et ne remplir que la copie : le modèle est
+versionné, et le dépôt est public.
 
 | Colonne | Contenu |
 |---|---|

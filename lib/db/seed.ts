@@ -6,8 +6,9 @@ import { creerLogger } from "@/lib/log";
  *
  * Le vrai seed est un livrable du jour 9 (CLAUDE.md §9) : 40 travailleurs,
  * 15 employeurs, 6 métiers, 4 communes d'Abidjan (Yopougon, Abobo, Cocody,
- * Treichville), des missions terminées et des témoignages audio RÉELS issus du
- * corpus. Aucune donnée inventée ici : ce script n'insère rien.
+ * Treichville), des missions terminées et des témoignages audio réels et consentis,
+ * lus depuis le stockage privé au moment du seed, jamais écrits dans le dépôt public
+ * (CLAUDE.md v2 §8). Aucune donnée inventée ici : ce script n'insère rien.
  */
 
 const log = creerLogger("db:seed");

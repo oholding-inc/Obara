@@ -61,7 +61,9 @@ def _post(url, corps, entetes):
         return json.loads(r.read().decode())
 
 def _cle(nom):
-    v = os.environ.get(nom)
+    # strip() : un retour chariot ou un saut de ligne collé avec la clé la ferait apparaître en clair dans un
+    # message d'erreur (« Invalid header value »), écrit ensuite dans bench/resultats/, versionné.
+    v = (os.environ.get(nom) or "").strip()
     if not v: sys.exit(f"Variable d'environnement {nom} manquante.")
     return v
 
@@ -216,7 +218,7 @@ def main():
         except urllib.error.HTTPError as ex:
             brut = f"ERREUR HTTP {ex.code} : {ex.read().decode()[:200]}"
         except Exception as ex:
-            brut = f"ERREUR : {ex}"
+            brut = f"ERREUR : {type(ex).__name__}"   # jamais le message : il peut contenir un en-tête avec la clé
         ms = int((time.time() - t0) * 1000)
         sortie, erreurs = valider(brut)
         n = noter(c, sortie, erreurs)

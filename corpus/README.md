@@ -1,5 +1,8 @@
 # Corpus vocal dioula / baoulé
 
+> **Dossier du jalon 1.** Depuis CLAUDE.md v2, le corpus de référence est
+> `bench/corpus_terrain/` (voir son README). Ne déposez pas de nouveaux vocaux ici.
+
 ## Rôle
 
 Ce dossier reçoit **30 à 50 vocaux réels** en dioula (`dyu`) et en baoulé (`bci`),
@@ -29,6 +32,13 @@ Exemples : `dyu_awa_001.ogg`, `dyu_awa_002.ogg`, `bci_kouassi_003.ogg`.
 
 ## Manifeste — `manifest.csv`
 
+Le manifeste n'est pas versionné : il contient des transcriptions de voix réelles. Pour en
+créer un, mettre cette ligne d'en-tête dans `corpus/manifest.csv`, que Git ignore :
+
+```
+fichier,langue,locuteur,metier_attendu,zone_attendue,transcription_reference,traduction_fr,consentement
+```
+
 Une ligne par vocal, séparateur virgule, encodage UTF-8. Colonnes :
 
 | Colonne                   | Contenu                                                              |
@@ -57,9 +67,9 @@ n'a pas de ligne dans `manifest.csv` et n'est pas conservé dans ce dossier.
 
 ## Ce qui est versionné
 
-- **Versionnés** : `README.md` (ce fichier) et `manifest.csv`.
-- **Jamais versionnés** : les fichiers audio (`.gitignore` exclut tout le reste du
-  dossier). Ils sont trop lourds et contiennent des voix réelles.
+- **Versionné** : `README.md` (ce fichier), rien d'autre.
+- **Jamais versionnés** : les fichiers audio et `manifest.csv`. Le `.gitignore` exclut tout
+  le reste du dossier : ils contiennent des voix et des transcriptions réelles.
 
 ## Déposer des fichiers
 
