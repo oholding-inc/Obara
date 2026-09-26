@@ -1,0 +1,345 @@
+{
+ "_doc": "Énumération FERMÉE des métiers. Source de vérité unique, consommée par l'application (TypeScript) ET par le banc d'essai (Python). Le LLM choisit un code dans cette liste ou renvoie 'autre' — jamais autre chose. Les codes sont neutres en genre ; le libellé affiché peut être accordé. 'proches' = métiers qui peuvent répondre à une demande de ce métier. Libellés dioula et baoulé à compléter par un locuteur natif.",
+ "metiers": [
+  {
+   "code": "aide-menagere",
+   "libelle": "Aide-ménagère",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "ménage",
+    "ménagère",
+    "femme de ménage",
+    "bonne",
+    "servante",
+    "travail de maison",
+    "ménage et cuisine"
+   ],
+   "proches": []
+  },
+  {
+   "code": "nounou",
+   "libelle": "Nounou",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "garde d'enfants",
+    "garder les enfants",
+    "garder mon bébé",
+    "baby-sitter"
+   ],
+   "proches": [
+    "aide-menagere"
+   ]
+  },
+  {
+   "code": "cuisinier",
+   "libelle": "Cuisinier / Cuisinière",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "cuisine",
+    "cuisinière",
+    "faire à manger"
+   ],
+   "proches": [
+    "aide-menagere"
+   ]
+  },
+  {
+   "code": "repasseur",
+   "libelle": "Repasseur / Repasseuse",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "repassage",
+    "repasser le linge"
+   ],
+   "proches": [
+    "blanchisseur",
+    "aide-menagere"
+   ]
+  },
+  {
+   "code": "blanchisseur",
+   "libelle": "Blanchisseur",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "lessive",
+    "laver le linge",
+    "pressing"
+   ],
+   "proches": [
+    "repasseur"
+   ]
+  },
+  {
+   "code": "macon",
+   "libelle": "Maçon",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "maçonnerie",
+    "construction",
+    "clôture",
+    "mur",
+    "fondation",
+    "chantier",
+    "apprenti maçon"
+   ],
+   "proches": [
+    "carreleur"
+   ]
+  },
+  {
+   "code": "carreleur",
+   "libelle": "Carreleur",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "carrelage",
+    "carreaux",
+    "faïence",
+    "dalles"
+   ],
+   "proches": [
+    "macon"
+   ]
+  },
+  {
+   "code": "peintre",
+   "libelle": "Peintre en bâtiment",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "peinture",
+    "peindre"
+   ],
+   "proches": []
+  },
+  {
+   "code": "plombier",
+   "libelle": "Plombier",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "plomberie",
+    "fuite d'eau",
+    "robinet",
+    "tuyau"
+   ],
+   "proches": []
+  },
+  {
+   "code": "electricien",
+   "libelle": "Électricien",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "électricité",
+    "installation électrique",
+    "courant"
+   ],
+   "proches": []
+  },
+  {
+   "code": "menuisier",
+   "libelle": "Menuisier",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "menuiserie",
+    "ébéniste",
+    "portes",
+    "meubles",
+    "bois"
+   ],
+   "proches": []
+  },
+  {
+   "code": "soudeur",
+   "libelle": "Soudeur",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "soudure",
+    "portail",
+    "grilles",
+    "ferronnerie"
+   ],
+   "proches": []
+  },
+  {
+   "code": "vitrier",
+   "libelle": "Vitrier",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "vitres",
+    "vitrerie",
+    "miroirs"
+   ],
+   "proches": []
+  },
+  {
+   "code": "frigoriste",
+   "libelle": "Frigoriste",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "frigo",
+    "réfrigérateur",
+    "congélateur",
+    "climatiseur",
+    "clim",
+    "climatisation"
+   ],
+   "proches": []
+  },
+  {
+   "code": "mecanicien",
+   "libelle": "Mécanicien",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "mécanique",
+    "garage",
+    "moteur",
+    "auto",
+    "moto"
+   ],
+   "proches": []
+  },
+  {
+   "code": "chauffeur",
+   "libelle": "Chauffeur",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "conduire",
+    "permis",
+    "gbaka",
+    "wôrô-wôrô",
+    "woro-woro",
+    "taxi",
+    "camion"
+   ],
+   "proches": [
+    "livreur"
+   ]
+  },
+  {
+   "code": "livreur",
+   "libelle": "Livreur",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "livraison",
+    "coursier",
+    "moto livraison"
+   ],
+   "proches": [
+    "chauffeur"
+   ]
+  },
+  {
+   "code": "gardien",
+   "libelle": "Gardien",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "vigile",
+    "gardiennage",
+    "sécurité",
+    "veilleur de nuit"
+   ],
+   "proches": []
+  },
+  {
+   "code": "jardinier",
+   "libelle": "Jardinier",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "jardin",
+    "entretien espaces verts",
+    "gazon"
+   ],
+   "proches": []
+  },
+  {
+   "code": "couturier",
+   "libelle": "Couturier / Couturière",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "couture",
+    "tailleur",
+    "coudre",
+    "tenues",
+    "pagne"
+   ],
+   "proches": []
+  },
+  {
+   "code": "coiffeur",
+   "libelle": "Coiffeur / Coiffeuse",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "coiffure",
+    "tresses",
+    "mèches",
+    "tresser"
+   ],
+   "proches": []
+  },
+  {
+   "code": "reparateur-telephone",
+   "libelle": "Réparateur de téléphones",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "réparation téléphone",
+    "écran",
+    "batterie de téléphone"
+   ],
+   "proches": []
+  },
+  {
+   "code": "tapissier",
+   "libelle": "Tapissier",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "tapisserie",
+    "fauteuils",
+    "canapé"
+   ],
+   "proches": []
+  },
+  {
+   "code": "vendeur",
+   "libelle": "Vendeur / Vendeuse",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [
+    "vente",
+    "boutique",
+    "commerce",
+    "tenir la boutique",
+    "marché"
+   ],
+   "proches": []
+  },
+  {
+   "code": "autre",
+   "libelle": "Autre",
+   "libelle_dyu": null,
+   "libelle_bci": null,
+   "synonymes": [],
+   "proches": []
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "_doc": "Les 13 communes du District autonome d'Abidjan, les quartiers courants rattachés à leur commune (y compris surnoms : 'Yop' = Yopougon), et les communes limitrophes pour le matching. Les zones sont TOUJOURS normalisées à la commune.",
+ "communes": [
+  "Abobo",
+  "Adjamé",
+  "Anyama",
+  "Attécoubé",
+  "Bingerville",
+  "Cocody",
+  "Koumassi",
+  "Marcory",
+  "Plateau",
+  "Port-Bouët",
+  "Songon",
+  "Treichville",
+  "Yopougon"
+ ],
+ "quartiers": {
+  "Riviera": "Cocody",
+  "Angré": "Cocody",
+  "Deux-Plateaux": "Cocody",
+  "2 Plateaux": "Cocody",
+  "Blockhauss": "Cocody",
+  "Palmeraie": "Cocody",
+  "Saint-Jean": "Cocody",
+  "Danga": "Cocody",
+  "Mermoz": "Cocody",
+  "Niangon": "Yopougon",
+  "Selmer": "Yopougon",
+  "Siporex": "Yopougon",
+  "Toits Rouges": "Yopougon",
+  "Wassakara": "Yopougon",
+  "Andokoi": "Yopougon",
+  "Gesco": "Yopougon",
+  "Yop": "Yopougon",
+  "Yop City": "Yopougon",
+  "PK18": "Abobo",
+  "PK 18": "Abobo",
+  "Avocatier": "Abobo",
+  "Anador": "Abobo",
+  "Zone 4": "Marcory",
+  "Biétry": "Marcory",
+  "Remblais": "Marcory",
+  "Anoumabo": "Marcory",
+  "Belleville": "Treichville",
+  "Arras": "Treichville",
+  "Williamsville": "Adjamé",
+  "220 Logements": "Adjamé",
+  "Gonzagueville": "Port-Bouët",
+  "Vridi": "Port-Bouët",
+  "Adjouffou": "Port-Bouët",
+  "Grand-Campement": "Koumassi",
+  "Abobodoumé": "Attécoubé",
+  "Locodjro": "Attécoubé"
+ },
+ "limitrophes": {
+  "Yopougon": [
+   "Attécoubé",
+   "Songon",
+   "Adjamé"
+  ],
+  "Abobo": [
+   "Adjamé",
+   "Anyama",
+   "Cocody"
+  ],
+  "Cocody": [
+   "Bingerville",
+   "Abobo",
+   "Adjamé",
+   "Plateau"
+  ],
+  "Adjamé": [
+   "Plateau",
+   "Abobo",
+   "Attécoubé",
+   "Yopougon",
+   "Cocody"
+  ],
+  "Plateau": [
+   "Adjamé",
+   "Cocody",
+   "Treichville",
+   "Attécoubé"
+  ],
+  "Treichville": [
+   "Plateau",
+   "Marcory",
+   "Koumassi"
+  ],
+  "Marcory": [
+   "Treichville",
+   "Koumassi",
+   "Port-Bouët"
+  ],
+  "Koumassi": [
+   "Marcory",
+   "Treichville",
+   "Port-Bouët"
+  ],
+  "Port-Bouët": [
+   "Marcory",
+   "Koumassi"
+  ],
+  "Attécoubé": [
+   "Yopougon",
+   "Adjamé",
+   "Plateau"
+  ],
+  "Anyama": [
+   "Abobo"
+  ],
+  "Bingerville": [
+   "Cocody"
+  ],
+  "Songon": [
+   "Yopougon"
+  ]
+ }
+}

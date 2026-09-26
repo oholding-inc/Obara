@@ -1,0 +1,2 @@
+fichier	langue	locuteur	genre	tranche_age	commune	lieu	texte	traduction_fr	attendu	consentement
+dyu_L03_007.opus	dyu	L03	F	26-40	Yopougon	marche	(transcription native verbatim)	(traduction)	{"kind":"offre","metier":"aide-menagere","zones":["Yopougon"],"disponibilite":"matin","tarif_indicatif_fcfa":null,"tarif_unite":null}	consentement/L03.opus

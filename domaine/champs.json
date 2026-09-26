@@ -1,0 +1,29 @@
+{
+ "_doc": "Valeurs fermées des champs de structuration.",
+ "kind": [
+  "offre",
+  "demande",
+  "hors_annonce"
+ ],
+ "kind_doc": {
+  "offre": "une personne propose ses services (« je cherche du travail comme… »)",
+  "demande": "quelqu'un cherche un prestataire (« je cherche un maçon »)",
+  "hors_annonce": "le message n'est pas une annonce : plainte, question, salutation, bruit"
+ },
+ "disponibilite": [
+  "matin",
+  "apres-midi",
+  "soir",
+  "nuit",
+  "journee",
+  "week-end",
+  "temps-plein"
+ ],
+ "tarif_unite": [
+  "heure",
+  "jour",
+  "semaine",
+  "mois",
+  "mission"
+ ]
+}

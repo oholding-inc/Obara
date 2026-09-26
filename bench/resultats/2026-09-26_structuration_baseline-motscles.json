@@ -1,0 +1,2974 @@
+{
+ "etage": "structuration",
+ "modele": "baseline-motscles",
+ "date": "2026-09-26T11:14:59+00:00",
+ "golden": "golden_structuration.jsonl",
+ "n_cas": 60,
+ "score_principal": {
+  "n": 12,
+  "json_valide": 1.0,
+  "kind_exact": 0.5,
+  "metier_exact": 0.3333333333333333,
+  "metier_invente": 0.0,
+  "metier_autre_abusif": 0.5,
+  "zones_f1": 0.8722222222222221,
+  "dispo_exact": 0.8333333333333334,
+  "tarif_exact": 1.0,
+  "latence_ms_mediane": 0
+ },
+ "jeu_principal": "test",
+ "score_dev": {
+  "n": 41,
+  "json_valide": 1.0,
+  "kind_exact": 0.9512195121951219,
+  "metier_exact": 0.926829268292683,
+  "metier_invente": 0.0,
+  "metier_autre_abusif": 0.024390243902439025,
+  "zones_f1": 1.0,
+  "dispo_exact": 0.975609756097561,
+  "tarif_exact": 0.975609756097561,
+  "latence_ms_mediane": 0
+ },
+ "verdict": "sous le seuil : metier_exact, kind_exact",
+ "par_langue": {
+  "dyu": {
+   "n": 7,
+   "json_valide": 1.0,
+   "kind_exact": 0.5714285714285714,
+   "metier_exact": 1.0,
+   "metier_invente": 0.0,
+   "metier_autre_abusif": 0.0,
+   "zones_f1": 1.0,
+   "dispo_exact": 0.7142857142857143,
+   "tarif_exact": 1.0,
+   "latence_ms_mediane": 0
+  },
+  "fr": {
+   "n": 48,
+   "json_valide": 1.0,
+   "kind_exact": 0.8333333333333334,
+   "metier_exact": 0.7708333333333334,
+   "metier_invente": 0.0,
+   "metier_autre_abusif": 0.14583333333333334,
+   "zones_f1": 0.9680555555555554,
+   "dispo_exact": 0.9375,
+   "tarif_exact": 0.9791666666666666,
+   "latence_ms_mediane": 0
+  },
+  "fr-ci": {
+   "n": 5,
+   "json_valide": 1.0,
+   "kind_exact": 1.0,
+   "metier_exact": 1.0,
+   "metier_invente": 0.0,
+   "metier_autre_abusif": 0.0,
+   "zones_f1": 1.0,
+   "dispo_exact": 1.0,
+   "tarif_exact": 1.0,
+   "latence_ms_mediane": 0
+  }
+ },
+ "par_difficulte": {
+  "facile": {},
+  "moyen": {},
+  "difficile": {
+   "n": 12,
+   "json_valide": 1.0,
+   "kind_exact": 0.5,
+   "metier_exact": 0.3333333333333333,
+   "metier_invente": 0.0,
+   "metier_autre_abusif": 0.5,
+   "zones_f1": 0.8722222222222221,
+   "dispo_exact": 0.8333333333333334,
+   "tarif_exact": 1.0,
+   "latence_ms_mediane": 0
+  }
+ },
+ "echecs": [
+  {
+   "id": "g022",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "couturier",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": "soir",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "g029",
+   "langue": "fr",
+   "attendu": {
+    "kind": "demande",
+    "metier": "macon",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "g036",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "g039",
+   "langue": "fr",
+   "attendu": {
+    "kind": "hors_annonce",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "hors_annonce",
+    "metier": "aide-menagere",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "g041",
+   "langue": "fr",
+   "attendu": {
+    "kind": "hors_annonce",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "hors_annonce",
+    "metier": "vendeur",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "g044",
+   "langue": "dyu",
+   "attendu": {
+    "kind": "demande",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "g046",
+   "langue": "dyu",
+   "attendu": {
+    "kind": "demande",
+    "metier": "plombier",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "plombier",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t001",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "cuisinier",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t002",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "jardinier",
+    "zones": [
+     "Anyama"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "jardinier",
+    "zones": [
+     "Abobo",
+     "Anyama"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t003",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t004",
+   "langue": "fr",
+   "attendu": {
+    "kind": "demande",
+    "metier": "mecanicien",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t005",
+   "langue": "fr",
+   "attendu": {
+    "kind": "demande",
+    "metier": "nounou",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t007",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t008",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "coiffeur",
+    "zones": [
+     "Marcory",
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "coiffeur",
+    "zones": [
+     "Koumassi",
+     "Marcory",
+     "Treichville"
+    ],
+    "disponibilite": "soir",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t009",
+   "langue": "fr",
+   "attendu": {
+    "kind": "demande",
+    "metier": "plombier",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "cuisinier",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t010",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "chauffeur",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t011",
+   "langue": "fr",
+   "attendu": {
+    "kind": "offre",
+    "metier": "couturier",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t012",
+   "langue": "fr",
+   "attendu": {
+    "kind": "demande",
+    "metier": "nounou",
+    "zones": [
+     "Bingerville"
+    ],
+    "disponibilite": "apres-midi",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Bingerville"
+    ],
+    "disponibilite": "soir",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  },
+  {
+   "id": "t013",
+   "langue": "dyu",
+   "attendu": {
+    "kind": "hors_annonce",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "erreurs": []
+  }
+ ],
+ "cas": [
+  {
+   "id": "g001",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 2,
+   "jeu": "dev"
+  },
+  {
+   "id": "g002",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g003",
+   "langue": "fr-ci",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "couturier",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "couturier",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g004",
+   "langue": "fr-ci",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "mecanicien",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "mecanicien",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g005",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": "temps-plein",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": "temps-plein",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g006",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "plombier",
+    "zones": [
+     "Marcory",
+     "Treichville"
+    ],
+    "disponibilite": "week-end",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "plombier",
+    "zones": [
+     "Marcory",
+     "Treichville"
+    ],
+    "disponibilite": "week-end",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g007",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "electricien",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "electricien",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g008",
+   "langue": "fr-ci",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "chauffeur",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "chauffeur",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g009",
+   "langue": "fr-ci",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "repasseur",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 3000,
+    "tarif_unite": "jour"
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "repasseur",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 3000,
+    "tarif_unite": "jour"
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g010",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "cuisinier",
+    "zones": [
+     "Treichville",
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "cuisinier",
+    "zones": [
+     "Marcory",
+     "Treichville"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g011",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "gardien",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": "nuit",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "gardien",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": "nuit",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g012",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "reparateur-telephone",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "reparateur-telephone",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g013",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "coiffeur",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "coiffeur",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g014",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "menuisier",
+    "zones": [
+     "Port-Bouët"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "menuisier",
+    "zones": [
+     "Port-Bouët"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g015",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "frigoriste",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "frigoriste",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g016",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "soudeur",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "soudeur",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g017",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "peintre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "peintre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g018",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "carreleur",
+    "zones": [
+     "Bingerville"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "carreleur",
+    "zones": [
+     "Bingerville"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g019",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "peintre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 5000,
+    "tarif_unite": "jour"
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "peintre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 5000,
+    "tarif_unite": "jour"
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g020",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "gardien",
+    "zones": [
+     "Abobo",
+     "Anyama"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "gardien",
+    "zones": [
+     "Abobo",
+     "Anyama"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g021",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g022",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "couturier",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": "soir",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 1,
+    "zones_f1": 1.0,
+    "dispo": 0,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g023",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": "journee",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": "journee",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g024",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "macon",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "macon",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g025",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "aide-menagere",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "aide-menagere",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g026",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "plombier",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": "week-end",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "plombier",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": "week-end",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g027",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "electricien",
+    "zones": [
+     "Bingerville"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "electricien",
+    "zones": [
+     "Bingerville"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g028",
+   "langue": "fr-ci",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "aide-menagere",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 60000,
+    "tarif_unite": "mois"
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "aide-menagere",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 60000,
+    "tarif_unite": "mois"
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g029",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "macon",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g030",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "chauffeur",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "chauffeur",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g031",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "frigoriste",
+    "zones": [
+     "Plateau"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "frigoriste",
+    "zones": [
+     "Plateau"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g032",
+   "langue": "fr",
+   "difficulte": "facile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "couturier",
+    "zones": [
+     "Treichville"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "couturier",
+    "zones": [
+     "Treichville"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 1000,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 0,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g033",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "gardien",
+    "zones": [
+     "Port-Bouët"
+    ],
+    "disponibilite": "nuit",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "gardien",
+    "zones": [
+     "Port-Bouët"
+    ],
+    "disponibilite": "nuit",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g034",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "macon",
+    "zones": [
+     "Anyama"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "macon",
+    "zones": [
+     "Anyama"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g035",
+   "langue": "fr",
+   "difficulte": "moyen",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "vendeur",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "vendeur",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g036",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g037",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g038",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Yopougon",
+     "Songon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Songon",
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g039",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "hors_annonce",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "hors_annonce",
+    "metier": "aide-menagere",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g040",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g041",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "hors_annonce",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "hors_annonce",
+    "metier": "vendeur",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g042",
+   "langue": "dyu",
+   "difficulte": "moyen",
+   "valide": false,
+   "attendu": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 0,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g043",
+   "langue": "dyu",
+   "difficulte": "facile",
+   "valide": false,
+   "attendu": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g044",
+   "langue": "dyu",
+   "difficulte": "moyen",
+   "valide": false,
+   "attendu": {
+    "kind": "demande",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "nounou",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g045",
+   "langue": "dyu",
+   "difficulte": "moyen",
+   "valide": false,
+   "attendu": {
+    "kind": "offre",
+    "metier": "couturier",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "couturier",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g046",
+   "langue": "dyu",
+   "difficulte": "difficile",
+   "valide": false,
+   "attendu": {
+    "kind": "demande",
+    "metier": "plombier",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "plombier",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "g047",
+   "langue": "dyu",
+   "difficulte": "moyen",
+   "valide": false,
+   "attendu": {
+    "kind": "offre",
+    "metier": "chauffeur",
+    "zones": [],
+    "disponibilite": "nuit",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "chauffeur",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 0,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "dev"
+  },
+  {
+   "id": "t001",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "cuisinier",
+    "zones": [
+     "Marcory"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t002",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "jardinier",
+    "zones": [
+     "Anyama"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "jardinier",
+    "zones": [
+     "Abobo",
+     "Anyama"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 0.6666666666666666,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t003",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "macon",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Abobo"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 1,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t004",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "mecanicien",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Koumassi"
+    ],
+    "disponibilite": "matin",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 1,
+    "zones_f1": 1.0,
+    "dispo": 0,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t005",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "nounou",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 1,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t006",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "gardien",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 50000,
+    "tarif_unite": "mois"
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "gardien",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": 50000,
+    "tarif_unite": "mois"
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t007",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [
+     "Yopougon"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "aide-menagere",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 0.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t008",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "coiffeur",
+    "zones": [
+     "Marcory",
+     "Koumassi"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "coiffeur",
+    "zones": [
+     "Koumassi",
+     "Marcory",
+     "Treichville"
+    ],
+    "disponibilite": "soir",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 0.8,
+    "dispo": 0,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t009",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "plombier",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "cuisinier",
+    "zones": [
+     "Cocody"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t010",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "chauffeur",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "demande",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 1,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t011",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "offre",
+    "metier": "couturier",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Adjamé"
+    ],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 1,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 1,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t012",
+   "langue": "fr",
+   "difficulte": "difficile",
+   "valide": true,
+   "attendu": {
+    "kind": "demande",
+    "metier": "nounou",
+    "zones": [
+     "Bingerville"
+    ],
+    "disponibilite": "apres-midi",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [
+     "Bingerville"
+    ],
+    "disponibilite": "soir",
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 0,
+    "metier_invente": 0,
+    "autre_abusif": 1,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  },
+  {
+   "id": "t013",
+   "langue": "dyu",
+   "difficulte": "difficile",
+   "valide": false,
+   "attendu": {
+    "kind": "hors_annonce",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "sortie": {
+    "kind": "offre",
+    "metier": "autre",
+    "zones": [],
+    "disponibilite": null,
+    "tarif_indicatif_fcfa": null,
+    "tarif_unite": null
+   },
+   "brut": null,
+   "erreurs": [],
+   "notes": {
+    "json_valide": 1,
+    "kind": 0,
+    "metier": 1,
+    "metier_invente": 0,
+    "autre_abusif": 0,
+    "zones_f1": 1.0,
+    "dispo": 1,
+    "tarif": 1,
+    "zones_inconnues": []
+   },
+   "latence_ms": 0,
+   "jeu": "test"
+  }
+ ]
+}

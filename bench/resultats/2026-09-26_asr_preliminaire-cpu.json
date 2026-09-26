@@ -1,0 +1,484 @@
+{
+ "etage": "asr",
+ "famille": "mixte",
+ "date": "2026-09-26T1130",
+ "gpu": "CPU (2 cœurs, 7 Go RAM) — PRÉLIMINAIRE",
+ "n_par_corpus": 24,
+ "preliminaire": true,
+ "avertissement": "Échantillon réduit (24 énoncés par corpus), exécution CPU. Latences non représentatives d'une T4. À remplacer par la passe Kaggle complète.",
+ "corpus": {
+  "BCI-CV": {
+   "langue": "bci",
+   "n": 24
+  },
+  "BCI-Z": {
+   "langue": "bci",
+   "n": 24
+  }
+ },
+ "non_evalues": {
+  "abdouaziiz/baoule": "dépôt à accès restreint : accepter ses conditions sur Hugging Face, fournir HF_TOKEN",
+  "Lingua-Africa/whisper-baoule-small": "dépôt VIDE — aucun poids publié, seulement .gitattributes",
+  "omniASR_LLM_300M_v2": "checkpoint de 6,53 Go : dépasse les 7 Go de RAM de la machine de test (tué par le noyau)"
+ },
+ "temoin_positif": {
+  "modele": "facebook/wav2vec2-base-960h",
+  "corpus": "librispeech_asr_dummy",
+  "cer_moyen": 0.022,
+  "sens": "le banc est sain : un échec à 100 % est celui du modèle, pas du code"
+ },
+ "resultats": [
+  {
+   "modele": "omniASR_CTC_300M_v2",
+   "licence": "Apache-2.0",
+   "corpus": "BCI-CV",
+   "langue": "bci",
+   "n": 24,
+   "cer_median": 0.23673958645489962,
+   "wer_median": 0.7207792207792207,
+   "latence_ms_mediane": 1776,
+   "rtf_median": 0.23,
+   "taux_echec": 0.125,
+   "cer_par_locuteur": {
+    "cf56e0d586": 0.3793103448275862,
+    "6bc699a2e0": 0.25806451612903225,
+    "566016a2a2": 0.14285714285714285,
+    "ac0f60ef98": 1.0,
+    "91a35fee30": 0.12244897959183673,
+    "2d0c0c9790": 0.23404255319148937,
+    "871a2d14e5": 0.15151515151515152,
+    "f8f36288c7": 0.23943661971830985,
+    "28683c9005": 0.21054054054054056
+   },
+   "exemples": [
+    {
+     "id": "common_voice_bci_41399068.mp3",
+     "locuteur": "cf56e0d586",
+     "ref": "e kwla yo ninnge mun likawlɛ naan sran kwlaa w'a yo kpa",
+     "hyp": "e kwlɔ yo ninge mun likawlɛ nan sran kwlɔ awa yo kpa",
+     "cer": 0.12727272727272726,
+     "wer": 0.4166666666666667,
+     "latence_ms": 4064,
+     "rtf": 0.2801244272684834,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41502030.mp3",
+     "locuteur": "ac0f60ef98",
+     "ref": "gnanmien kloli ye ye le kɛ wa fa iwa wa man ye",
+     "hyp": "",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 1237,
+     "rtf": 0.2583043218754487,
+     "echec": true
+    },
+    {
+     "id": "common_voice_bci_41493007.mp3",
+     "locuteur": "f8f36288c7",
+     "ref": "klɔ'n i akpɔ'm be su'n sran'm be sin su kpa",
+     "hyp": "klɔni akpaun besun sranm besin sukpa",
+     "cer": 0.23255813953488372,
+     "wer": 1.0,
+     "latence_ms": 3355,
+     "rtf": 0.2420589521333769,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41473881.mp3",
+     "locuteur": "6bc699a2e0",
+     "ref": "anunman'm be to jue nglɛmun nun",
+     "hyp": "anuman be ko jue nglɛn mu nu",
+     "cer": 0.25806451612903225,
+     "wer": 0.8333333333333334,
+     "latence_ms": 1831,
+     "rtf": 0.22806358622506773,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41479855.mp3",
+     "locuteur": "566016a2a2",
+     "ref": "kɛ e leman like uflɛ e yoman'n e faman e wun wlaman",
+     "hyp": "kɛ e lɛ man like u flɛ e yo man e faman e wun wlaman",
+     "cer": 0.11764705882352941,
+     "wer": 0.5,
+     "latence_ms": 3625,
+     "rtf": 0.2504500188242341,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41667611.mp3",
+     "locuteur": "871a2d14e5",
+     "ref": "be su kplan sua uflɛuflɛ kun wa",
+     "hyp": "be su kplaan sua u fɛ flɛ kun wa",
+     "cer": 0.12903225806451613,
+     "wer": 0.5714285714285714,
+     "latence_ms": 1193,
+     "rtf": 0.22692309304096564,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41623390.mp3",
+     "locuteur": "2d0c0c9790",
+     "ref": "e su siesie aliɛ ngunmin kun man aofuɛ n'dɔssua",
+     "hyp": "e su sisie aliɛ ngunmin kunman aufuɛ ndɛndɛ ndɔsua",
+     "cer": 0.23404255319148937,
+     "wer": 0.5555555555555556,
+     "latence_ms": 2496,
+     "rtf": 0.23189134998243568,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41521407.mp3",
+     "locuteur": "28683c9005",
+     "ref": "kɛ a nɔn nzue ng'ɔ o sin lɔ'n a nianman nzue ng'ɔ o sin lɔ'n i bue'm be su",
+     "hyp": "kɛ a nɔn nzue ngɔ sin lɔ'n anianman nzue ngɔ ɔ sin lɔ'n i bue'm be su",
+     "cer": 0.08108108108108109,
+     "wer": 0.3157894736842105,
+     "latence_ms": 2282,
+     "rtf": 0.22638877705922203,
+     "echec": false
+    }
+   ],
+   "vram_pic_go": 0,
+   "verdict": null
+  },
+  {
+   "modele": "omniASR_CTC_300M_v2",
+   "licence": "Apache-2.0",
+   "corpus": "BCI-Z",
+   "langue": "bci",
+   "n": 24,
+   "cer_median": 0.3618181818181818,
+   "wer_median": 0.9642857142857143,
+   "latence_ms_mediane": 934,
+   "rtf_median": 0.239,
+   "taux_echec": 0.0,
+   "cer_par_locuteur": {
+    "OD_F01": 0.417910447761194,
+    "OD_F03": 0.33217391304347826,
+    "OD_M02": 0.38181818181818183,
+    "OD_M04": 0.2727272727272727
+   },
+   "exemples": [
+    {
+     "id": "OD_F01_290.m4a",
+     "locuteur": "OD_F01",
+     "ref": "i niaan'm be lafimɛn i su",
+     "hyp": "inia mu be lafi me so",
+     "cer": 0.44,
+     "wer": 0.8333333333333334,
+     "latence_ms": 941,
+     "rtf": 0.24264872200937415,
+     "echec": false
+    },
+    {
+     "id": "OD_F03_575.m4a",
+     "locuteur": "OD_F03",
+     "ref": "amun e fa sa kun e nian",
+     "hyp": "amú ye fasákun enian",
+     "cer": 0.30434782608695654,
+     "wer": 1.0,
+     "latence_ms": 934,
+     "rtf": 0.22001921450517,
+     "echec": false
+    },
+    {
+     "id": "OD_M04_464.aac",
+     "locuteur": "OD_M04",
+     "ref": "e afiɛn siesielɛ ti ɔ",
+     "hyp": "é á fiẹn sìsí lẹ ntẹọ",
+     "cer": 0.6190476190476191,
+     "wer": 1.2,
+     "latence_ms": 600,
+     "rtf": 0.23495004878750161,
+     "echec": false
+    },
+    {
+     "id": "OD_M02_261.m4a",
+     "locuteur": "OD_M02",
+     "ref": "mon nin tchin",
+     "hyp": "монече",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 605,
+     "rtf": 0.26237571405039894,
+     "echec": false
+    },
+    {
+     "id": "OD_F01_422.m4a",
+     "locuteur": "OD_F01",
+     "ref": "zezi seli i kɛ a wunnin i sran bɔbɔ nga ɔ nin wɔ be su ijɔ yɛ'n niɔn",
+     "hyp": "iseli kɛ awinni sran bɔbɔ nga ɔ ni yɔ be su i jɔ yɛ niɔ",
+     "cer": 0.25,
+     "wer": 0.6666666666666666,
+     "latence_ms": 1862,
+     "rtf": 0.23648790824957075,
+     "echec": false
+    },
+    {
+     "id": "OD_F03_494.m4a",
+     "locuteur": "OD_F03",
+     "ref": "sa mɔ i bo'n gúa kpa'n",
+     "hyp": "sámọ ibógú àpa",
+     "cer": 0.5454545454545454,
+     "wer": 1.0,
+     "latence_ms": 727,
+     "rtf": 0.2054183609063457,
+     "echec": false
+    },
+    {
+     "id": "OD_M04_437.aac",
+     "locuteur": "OD_M04",
+     "ref": "zedeɔn nin sran ya nsan",
+     "hyp": "zedin ɔ nin sran ya n san",
+     "cer": 0.21739130434782608,
+     "wer": 0.8,
+     "latence_ms": 934,
+     "rtf": 0.22844114004307697,
+     "echec": false
+    },
+    {
+     "id": "OD_M02_237.m4a",
+     "locuteur": "OD_M02",
+     "ref": "bo jasin'n",
+     "hyp": "bojasi",
+     "cer": 0.4,
+     "wer": 1.0,
+     "latence_ms": 609,
+     "rtf": 0.24408627396974808,
+     "echec": false
+    }
+   ],
+   "vram_pic_go": 0,
+   "verdict": null
+  },
+  {
+   "modele": "Klayt/wav2vec2-large-xlsr-baoule-demo",
+   "licence": "Apache-2.0",
+   "corpus": "BCI-CV",
+   "langue": "bci",
+   "n": 24,
+   "cer_median": 1.0,
+   "wer_median": 1.0,
+   "latence_ms_mediane": 1908,
+   "rtf_median": 0.241,
+   "taux_echec": 0.5,
+   "cer_par_locuteur": {
+    "2d0c0c9790": 1.0,
+    "ac0f60ef98": 1.0,
+    "566016a2a2": 1.0,
+    "28683c9005": 1.0,
+    "f8f36288c7": 1.0,
+    "cf56e0d586": 1.0,
+    "6bc699a2e0": 1.0,
+    "871a2d14e5": 1.0,
+    "91a35fee30": 1.0
+   },
+   "exemples": [
+    {
+     "id": "common_voice_bci_41399068.mp3",
+     "locuteur": "cf56e0d586",
+     "ref": "e kwla yo ninnge mun likawlɛ naan sran kwlaa w'a yo kpa",
+     "hyp": "ô",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 3967,
+     "rtf": 0.2734071793620633,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41502030.mp3",
+     "locuteur": "ac0f60ef98",
+     "ref": "gnanmien kloli ye ye le kɛ wa fa iwa wa man ye",
+     "hyp": "",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 1308,
+     "rtf": 0.27323999102153473,
+     "echec": true
+    },
+    {
+     "id": "common_voice_bci_41493007.mp3",
+     "locuteur": "f8f36288c7",
+     "ref": "klɔ'n i akpɔ'm be su'n sran'm be sin su kpa",
+     "hyp": "",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 3646,
+     "rtf": 0.2630523960999768,
+     "echec": true
+    },
+    {
+     "id": "common_voice_bci_41473881.mp3",
+     "locuteur": "6bc699a2e0",
+     "ref": "anunman'm be to jue nglɛmun nun",
+     "hyp": "p",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 2032,
+     "rtf": 0.2531072187019808,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41479855.mp3",
+     "locuteur": "566016a2a2",
+     "ref": "kɛ e leman like uflɛ e yoman'n e faman e wun wlaman",
+     "hyp": "ńń",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 3544,
+     "rtf": 0.24486395322927262,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41667611.mp3",
+     "locuteur": "871a2d14e5",
+     "ref": "be su kplan sua uflɛuflɛ kun wa",
+     "hyp": "ńń",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 1438,
+     "rtf": 0.27351464673627274,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41623390.mp3",
+     "locuteur": "2d0c0c9790",
+     "ref": "e su siesie aliɛ ngunmin kun man aofuɛ n'dɔssua",
+     "hyp": "ńô",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 2716,
+     "rtf": 0.25228621657565375,
+     "echec": false
+    },
+    {
+     "id": "common_voice_bci_41521407.mp3",
+     "locuteur": "28683c9005",
+     "ref": "kɛ a nɔn nzue ng'ɔ o sin lɔ'n a nianman nzue ng'ɔ o sin lɔ'n i bue'm be su",
+     "hyp": "ńô",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 2361,
+     "rtf": 0.23422851448967344,
+     "echec": false
+    }
+   ],
+   "vram_pic_go": 0,
+   "verdict": null,
+   "note": "sorties de 1 à 3 caractères ; vocabulaire sans ɛ, ɔ, ɲ ; témoin positif du banc à 2,2 % de CER"
+  },
+  {
+   "modele": "Klayt/wav2vec2-large-xlsr-baoule-demo",
+   "licence": "Apache-2.0",
+   "corpus": "BCI-Z",
+   "langue": "bci",
+   "n": 24,
+   "cer_median": 1.0,
+   "wer_median": 1.0,
+   "latence_ms_mediane": 957,
+   "rtf_median": 0.245,
+   "taux_echec": 0.25,
+   "cer_par_locuteur": {
+    "OD_M02": 1.0,
+    "OD_F01": 1.0,
+    "OD_M04": 1.0,
+    "OD_F03": 1.0
+   },
+   "exemples": [
+    {
+     "id": "OD_F01_290.m4a",
+     "locuteur": "OD_F01",
+     "ref": "i niaan'm be lafimɛn i su",
+     "hyp": "p",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 1009,
+     "rtf": 0.2601489623566982,
+     "echec": false
+    },
+    {
+     "id": "OD_F03_575.m4a",
+     "locuteur": "OD_F03",
+     "ref": "amun e fa sa kun e nian",
+     "hyp": "ppô",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 1027,
+     "rtf": 0.24200293436004786,
+     "echec": false
+    },
+    {
+     "id": "OD_M04_464.aac",
+     "locuteur": "OD_M04",
+     "ref": "e afiɛn siesielɛ ti ɔ",
+     "hyp": "",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 630,
+     "rtf": 0.24660640528650868,
+     "echec": true
+    },
+    {
+     "id": "OD_M02_261.m4a",
+     "locuteur": "OD_M02",
+     "ref": "mon nin tchin",
+     "hyp": "ń",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 627,
+     "rtf": 0.27222310503323877,
+     "echec": false
+    },
+    {
+     "id": "OD_F01_422.m4a",
+     "locuteur": "OD_F01",
+     "ref": "zezi seli i kɛ a wunnin i sran bɔbɔ nga ɔ nin wɔ be su ijɔ yɛ'n niɔn",
+     "hyp": "ńńń",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 1855,
+     "rtf": 0.23565751609240393,
+     "echec": false
+    },
+    {
+     "id": "OD_F03_494.m4a",
+     "locuteur": "OD_F03",
+     "ref": "sa mɔ i bo'n gúa kpa'n",
+     "hyp": "pô",
+     "cer": 0.9545454545454546,
+     "wer": 1.0,
+     "latence_ms": 916,
+     "rtf": 0.25864120081872616,
+     "echec": false
+    },
+    {
+     "id": "OD_M04_437.aac",
+     "locuteur": "OD_M04",
+     "ref": "zedeɔn nin sran ya nsan",
+     "hyp": "ńń",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 1149,
+     "rtf": 0.2810845807064357,
+     "echec": false
+    },
+    {
+     "id": "OD_M02_237.m4a",
+     "locuteur": "OD_M02",
+     "ref": "bo jasin'n",
+     "hyp": "pń",
+     "cer": 1.0,
+     "wer": 1.0,
+     "latence_ms": 623,
+     "rtf": 0.2495113473672133,
+     "echec": false
+    }
+   ],
+   "vram_pic_go": 0,
+   "verdict": null,
+   "note": "sorties de 1 à 3 caractères ; vocabulaire sans ɛ, ɔ, ɲ ; témoin positif du banc à 2,2 % de CER"
+  }
+ ]
+}

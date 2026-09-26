@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# O'Bara
 
-## Getting Started
+*Baara* — « le travail », en dioula.
 
-First, run the development server:
+O'Bara met en relation **par la voix**, en français, dioula et baoulé, les travailleurs du
+secteur informel ivoirien — aides-ménagères, maçons, couturières, mécaniciens, nounous — et
+ceux qui cherchent leurs services. Au-delà de la mise en relation, O'Bara construit ce qui
+manque à ces travailleurs : **la preuve de leur travail**, sous forme d'historique de
+missions et de témoignages vocaux.
+
+## Pour les contributeurs
+
+| Document | Contenu |
+|---|---|
+| [`CLAUDE.md`](CLAUDE.md) | Constitution du projet : pile, règles, invariants |
+| [`docs/BRIEF-CLAUDE-CODE.md`](docs/BRIEF-CLAUDE-CODE.md) | Chantiers en cours, prompts pour Claude Code |
+| [`docs/BANC-ESSAI.md`](docs/BANC-ESSAI.md) | Évaluation des modèles vocaux et de langage, résultats |
+| [`docs/COLAB-VS-KAGGLE.md`](docs/COLAB-VS-KAGGLE.md) | Où faire tourner quoi |
+| [`docs/DECISIONS.md`](docs/DECISIONS.md) | Journal des décisions |
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cp .env.example .env.local     # USE_MOCKS=true suffit pour démarrer
+pnpm install && pnpm dev
+python bench/score_structuration.py --modele baseline-motscles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Données et voix
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Aucune voix réelle n'est versionnée dans ce dépôt public. Le corpus terrain vit dans un
+espace privé, et chaque enregistrement est précédé d'un consentement dit et enregistré.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Corpus publics utilisés pour l'évaluation : Koumankan4Dyula (UVCI, data354), Baule Speech
+Dataset (data354), Common Voice baoulé. Merci à leurs auteurs.

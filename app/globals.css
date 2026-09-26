@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
+/* CLAUDE.md cite les classes interdites (bg-gradient-to-r…) : ne pas le scanner. */
+@source not "../CLAUDE.md";
+
+/*
+ * Direction artistique « enseigne peinte d'Abidjan » (CLAUDE.md §6).
+ *
+ * Les tokens sont déclarés une fois sur :root (noms courts), puis exposés à
+ * Tailwind via @theme inline sous leurs noms de namespace (--color-*, --font-*),
+ * ce qui génère les utilitaires bg-taxi, text-papier, border-encre, font-titre…
+ * Les deux déclarations portent des noms différents pour éviter qu'une variable
+ * se référence elle-même.
+ *
+ * Pas de mode sombre : une seule palette, lisible en plein soleil.
+ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --laterite: #b5461f; /* terre rouge-orangé — aplat décoratif uniquement : contraste < 7:1 avec papier et encre, jamais de texte dessus */
+  --taxi: #f2b807; /* jaune taxi Abidjan */
+  --bache: #14532a; /* vert bâche — 7,6:1 avec papier (AAA, lecture en plein soleil) */
+  --encre: #141210; /* noir d'encre */
+  --papier: #f3ead3; /* fond papier crème — jamais #fff ni slate */
+
+  /* Polices système uniquement à ce jalon (hors ligne). Archivo Condensed / Anton
+     arriveront en next/font/local au jalon UI. */
+  --police-titre: "Archivo Narrow", "Arial Narrow", Impact, "Roboto Condensed", sans-serif;
+  --police-corps: Arial, Helvetica, sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-laterite: var(--laterite);
+  --color-taxi: var(--taxi);
+  --color-bache: var(--bache);
+  --color-encre: var(--encre);
+  --color-papier: var(--papier);
+
+  --font-titre: var(--police-titre);
+  --font-corps: var(--police-corps);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Dans @layer base : hors couche, ces règles écraseraient les utilitaires Tailwind
+   (normal-case, font-*, tracking-*, leading-*, text-*) quelle que soit la spécificité. */
+@layer base {
+  body {
+    background: var(--papier);
+    color: var(--encre);
+    font-family: var(--police-corps);
+    font-size: 18px;
+    line-height: 1.5;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  h1,
+  h2 {
+    font-family: var(--police-titre);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
 }
